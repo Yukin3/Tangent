@@ -37,7 +37,7 @@ export function HeroSection() {
         <ShineBorder className="relative mx-auto" borderClassName="border border-white/10 rounded-xl overflow-hidden">
           <div className="relative">
             <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hero%20image.jpg-mE5vAT4d864MlVhdkcrk1Vn2WcNONq.jpeg"
+              src="https://mdg.imgix.net/assets/images/tools/obsidian.png"
               alt="Background Gradient"
               width={1920}
               height={1080}
@@ -47,7 +47,7 @@ export function HeroSection() {
               <div className="bg-black/20 backdrop-blur-sm p-4 rounded-xl w-[90%] h-[70%] flex">
                 <div className="flex-1 pr-2">
                   <img
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Browser-HZNDOssbyLixIa4lABR27yelWXveQ0.png"
+                    src="https://hallofdoors.com/static/img/obsidian.png"
                     alt="Browser Preview"
                     width={800}
                     height={600}
