@@ -16,9 +16,9 @@ export function HeroSection() {
       >
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-            Something something 
+            Take Smarter Notes and 
             <br />
-            Soemthing else
+            Easily Visualize Data
           </h1>
           <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
             Some hero text explaingin the app and self-glazing
