@@ -3,8 +3,8 @@ import { GradientCard } from "@/components/gradient-card"
 export function FeaturesSection() {
   const features = [
     {
-      title: "Save Time, Share Faster",
-      description: "Quick and efficient screen sharing",
+      title: "Save Better, Visualize Better",
+      description: "Qudsfdgdg",
       image: "/placeholder.svg?height=200&width=300",
     },
     {
@@ -13,8 +13,8 @@ export function FeaturesSection() {
       image: "/placeholder.svg?height=200&width=300",
     },
     {
-      title: "Low CPU Usage",
-      description: "Optimized performance",
+      title: "Low distraction UI",
+      description: "Optimzed for focus",
       image: "/placeholder.svg?height=200&width=300",
     },
   ]
@@ -23,12 +23,10 @@ export function FeaturesSection() {
     <section className="py-16 px-6">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold mb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60">
-          Advanced Screen Sharing
+          Markdown Style Notes
         </h2>
         <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
-          Effortlessly share specific sections of your screen during calls without revealing unnecessary information.
-          Our innovative cropping feature ensures that you can focus on what matters most without compromising privacy
-          or security.
+          Efefdgdfgsdfg
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature) => (
