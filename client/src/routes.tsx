@@ -11,6 +11,8 @@ import Networks from "./scenes/network";
 // import Games from "./scenes/games";
 import GraphView from "./scenes/network/GraphView";
 import Tetris from "./scenes/games/tetris";
+import Charts from "./scenes/charts";
+import ChartsView from "./scenes/charts/ChartsView";
 
 function AppRoutes() {
   return (
@@ -28,8 +30,8 @@ function AppRoutes() {
               <Route path="create" element={<ComingSoon/>} />    {/* Route for creating/importing new note */}
               <Route path="*" element={<NotFoundError />} />
             </Route>
-            <Route path="/charts" element={<ComingSoon />}>
-              <Route index element={<ComingSoon />} /> {/*  */}
+            <Route path="/charts" element={<Charts />}>
+              <Route index element={<ChartsView />} /> {/*  */}
               <Route path="view" element={<ComingSoon/>} />    {/*  */}
               <Route path="create" element={<ComingSoon/>} />    {/*  */}
               <Route path="*" element={<NotFoundError />} />

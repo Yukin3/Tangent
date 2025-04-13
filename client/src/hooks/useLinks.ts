@@ -29,18 +29,35 @@ export function useLinks({ userId, noteId }: UseLinksOptions) {
         if (!response.ok) throw new Error("Failed to fetch links");
 
         const data = await response.json();
-        if (data.success) {
-          setLinks(data.data);
+
+        type RawLink = {
+          _id: string;
+          sourceNoteId: string;
+          targetNoteId: string;
+          userId: string;
+          type: string;
+          createdAt: string;
+        };
+
+        if (data.success && Array.isArray(data.data)) {
+          const parsedLinks: Link[] = (data.data as RawLink[]).map((link) => ({
+            _id: String(link._id),
+            sourceNoteId: String(link.sourceNoteId),
+            targetNoteId: String(link.targetNoteId),
+            userId: String(link.userId),
+            type: String(link.type),
+            createdAt: String(link.createdAt),
+          }));
+
+          setLinks(parsedLinks);
         } else {
           throw new Error(data.message || "Failed to load links");
         }
       } catch (err: unknown) {
-        if (err instanceof Error) {
-          if (err instanceof TypeError && err.message.includes('Failed to fetch')) {
-            setError('server-down');
-          } else {
-            setError(err.message || 'An unknown error occurred');
-          }
+        if (err instanceof TypeError && err.message.includes('Failed to fetch')) {
+          setError('server-down');
+        } else if (err instanceof Error) {
+          setError(err.message || 'An unknown error occurred');
         } else {
           setError('An unknown error occurred');
         }

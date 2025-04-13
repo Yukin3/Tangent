@@ -26,6 +26,9 @@ export default function Navbar() {
           <Link to="/charts" className="text-sm font-medium hover:text-primary transition-colors">
             Charts
           </Link>
+          <Link to="/games" className="text-sm font-medium hover:text-primary transition-colors">
+            Games
+          </Link>
         </nav>
 
         {/* Auth and theme toggle */}

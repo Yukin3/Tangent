@@ -16,13 +16,12 @@ export function HeroSection() {
       >
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-            Take Smarter Notes and 
+            Take Smarter Notes 
             <br />
             Easily Visualize Data
           </h1>
           <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
-            Some hero text explaingin the app and self-glazing
-          </p>
+            The web-based, markdown notebook that supercharges note-taking with GenAI          </p>
           <div className="flex gap-4 justify-center">
             <Button variant="outline" className="gap-2 border-white/10 bg-white/5 hover:bg-white/10" onClick={() => navigate("/demo")}>
               <Play className="w-4 h-4" />
@@ -37,8 +36,8 @@ export function HeroSection() {
         <ShineBorder className="relative mx-auto" borderClassName="border border-white/10 rounded-xl overflow-hidden">
           <div className="relative">
             <img
-              src="https://mdg.imgix.net/assets/images/tools/obsidian.png"
-              alt="Background Gradient"
+              src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/373/943/datas/gallery.jpg"
+              alt="Tangnt Home Screen"
               width={1920}
               height={1080}
               className="w-full h-auto"
@@ -48,7 +47,7 @@ export function HeroSection() {
                 <div className="flex-1 pr-2">
                   <img
                     src="https://hallofdoors.com/static/img/obsidian.png"
-                    alt="Browser Preview"
+                    alt="Obsidian Graph Wiew"
                     width={800}
                     height={600}
                     className="w-full h-full object-cover rounded-lg"
@@ -56,8 +55,8 @@ export function HeroSection() {
                 </div>
                 <div className="flex-1 pl-2">
                   <img
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Editor%20Window-sJ4sXlXpgDhv7gLvQylqH5VTb3L0rc.png"
-                    alt="Code Editor"
+                    src="https://mdg.imgix.net/assets/images/tools/obsidian.png"
+                    alt="Obsidian Notes and Graph View"
                     width={800}
                     height={600}
                     className="w-full h-full object-cover rounded-lg"
